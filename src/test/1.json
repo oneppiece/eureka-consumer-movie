@@ -1,0 +1,49 @@
+[
+  {
+    "host": "192.168.0.103",
+    "port": 8000,
+    "uri": "http://192.168.0.103:8000",
+    "metadata": {
+      "my-metadata": "你好，我是小a`"
+    },
+    "serviceId": "EUREKA-PROVIDER-USER",
+    "instanceInfo": {
+      "instanceId": "localhost:eureka-provider-user:8000",
+      "app": "EUREKA-PROVIDER-USER",
+      "appGroupName": null,
+      "ipAddr": "192.168.0.103",
+      "sid": "na",
+      "homePageUrl": "http://192.168.0.103:8000/",
+      "statusPageUrl": "http://192.168.0.103:8000/info",
+      "healthCheckUrl": "http://192.168.0.103:8000/health",
+      "secureHealthCheckUrl": null,
+      "vipAddress": "eureka-provider-user",
+      "secureVipAddress": "eureka-provider-user",
+      "countryId": 1,
+      "dataCenterInfo": {
+        "@class": "com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo",
+        "name": "MyOwn"
+      },
+      "hostName": "192.168.0.103",
+      "status": "UP",
+      "leaseInfo": {
+        "renewalIntervalInSecs": 30,
+        "durationInSecs": 90,
+        "registrationTimestamp": 1519490102659,
+        "lastRenewalTimestamp": 1519490102659,
+        "evictionTimestamp": 0,
+        "serviceUpTimestamp": 1519490102659
+      },
+      "isCoordinatingDiscoveryServer": false,
+      "metadata": {
+        "my-metadata": "你好，我是小a`"
+      },
+      "lastUpdatedTimestamp": 1519490102659,
+      "lastDirtyTimestamp": 1519490102614,
+      "actionType": "ADDED",
+      "asgName": null,
+      "overriddenStatus": "UNKNOWN"
+    },
+    "secure": false
+  }
+]

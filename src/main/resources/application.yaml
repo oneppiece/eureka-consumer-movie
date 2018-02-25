@@ -1,0 +1,19 @@
+server.port: 8010
+endpoints:
+  info:
+    enabled: true
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka:eureka@peer1:8761/eureka/, http://eureka:eureka@peer2:8762/eureka/
+    healthcheck:
+      enable: true
+spring:
+  application:
+    name: eureka-consumer-movie
+
+eureka-provider-user:
+  ribbon:
+    NfLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
