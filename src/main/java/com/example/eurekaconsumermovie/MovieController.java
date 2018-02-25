@@ -1,5 +1,6 @@
 package com.example.eurekaconsumermovie;
 
+import com.example.eurekaconsumermovie.feignClient.UserFeignClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -29,9 +30,14 @@ public class MovieController {
     @Autowired
     private LoadBalancerClient loadBalancerClient;
 
+    @Autowired
+    private UserFeignClient userFeignClient;
+
     @GetMapping("/user/{id}")
     public User user(@PathVariable Long id) {
-        return restTemplate.getForObject("http://eureka-provider-user/" + id, User.class);
+//        return restTemplate.getForObject("http://eureka-provider-user/" + id, User.class);
+
+        return userFeignClient.findById(id);
     }
 
     @GetMapping("/user-metadata")
